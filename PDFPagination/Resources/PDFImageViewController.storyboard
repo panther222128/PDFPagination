@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Image View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="PDFImageViewController" customModule="PDFPagination" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jmH-FL-fWp">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HC5-mF-QSC">
+                                <rect key="frame" x="0.0" y="421" width="75" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="previousPageButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="905-dE-nAh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Zd-EA-bAm">
+                                <rect key="frame" x="318" y="421" width="75" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="nextPageButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="q63-AN-1iq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="3Zd-EA-bAm" firstAttribute="trailing" secondItem="jmH-FL-fWp" secondAttribute="trailing" id="32a-Hl-x0e"/>
+                            <constraint firstItem="HC5-mF-QSC" firstAttribute="centerY" secondItem="jmH-FL-fWp" secondAttribute="centerY" id="9uW-vs-u1q"/>
+                            <constraint firstItem="HC5-mF-QSC" firstAttribute="leading" secondItem="jmH-FL-fWp" secondAttribute="leading" id="WlX-9A-VYa"/>
+                            <constraint firstItem="3Zd-EA-bAm" firstAttribute="centerY" secondItem="jmH-FL-fWp" secondAttribute="centerY" id="ed5-Pn-0rO"/>
+                            <constraint firstItem="jmH-FL-fWp" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="fLB-Oh-cJn"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="jmH-FL-fWp" secondAttribute="bottom" id="gmB-47-omr"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="jmH-FL-fWp" secondAttribute="trailing" id="lJJ-3L-VHM"/>
+                            <constraint firstItem="jmH-FL-fWp" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="qzM-lu-t87"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="nextPageButton" destination="3Zd-EA-bAm" id="h2S-cZ-Qc6"/>
+                        <outlet property="pdfImageView" destination="jmH-FL-fWp" id="BsD-4q-ono"/>
+                        <outlet property="previousPageButton" destination="HC5-mF-QSC" id="4TZ-6m-dX0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="46.564885496183201" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

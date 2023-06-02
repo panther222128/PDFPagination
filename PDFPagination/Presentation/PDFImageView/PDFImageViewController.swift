@@ -9,7 +9,7 @@ import UIKit
 import PDFKit
 import Combine
 
-final class PDFViewController: UIViewController, StoryboardInstantiable {
+final class PDFImageViewController: UIViewController, StoryboardInstantiable {
     
     @IBOutlet weak var pdfImageView: UIImageView!
     @IBOutlet weak var previousPageButton: UIButton!
@@ -27,8 +27,8 @@ final class PDFViewController: UIViewController, StoryboardInstantiable {
         viewModel.didLoadInitialPage()
     }
     
-    static func create(with viewModel: PDFViewModel) -> PDFViewController {
-        let viewController = PDFViewController.instantiateViewController()
+    static func create(with viewModel: PDFViewModel) -> PDFImageViewController {
+        let viewController = PDFImageViewController.instantiateViewController()
         viewController.viewModel = viewModel
         return viewController
     }
@@ -58,16 +58,16 @@ final class PDFViewController: UIViewController, StoryboardInstantiable {
     }
     
     @IBAction func previousPageButtonAction(_ sender: Any) {
-        viewModel.didMovePreviousPage()
+        viewModel.didMovePreviousPage(in: .portrait)
     }
     
     @IBAction func nextPageButtonAction(_ sender: Any) {
-        viewModel.didMoveNextPage()
+        viewModel.didMoveNextPage(in: .portrait)
     }
     
 }
 
-extension PDFViewController {
+extension PDFImageViewController {
     private func subscribeCurrentPage() {
         viewModel.currentPage
             .receive(on: DispatchQueue.main)

@@ -11,43 +11,56 @@ import PDFKit
 
 protocol PDFViewModel {
     var currentPage: PassthroughSubject<PDFPage, Never> { get }
-    var currentPageIndex: Int { get }
     
     func didLoadInitialPage()
-    func didMoveNextPage()
-    func didMovePreviousPage()
+    func didMoveNextPage(in orientation: UIDeviceOrientation)
+    func didMovePreviousPage(in orientation: UIDeviceOrientation)
 }
 
 final class DefaultPDFViewModel: PDFViewModel {
     
     private(set) var currentPage: PassthroughSubject<PDFPage, Never>
-    private(set) var currentPageIndex: Int
-    private(set) var pdfDocument: PDFDocument
+    private var currentPageIndex: Int
+    private let pdfDocument: PDFDocument
     private let lastPageIndex: Int
     
     init(pdf: PDF) {
         self.currentPage = PassthroughSubject()
-        self.currentPageIndex = pdf.firstPageIndex
         self.pdfDocument = pdf.pdfDocument
+        self.currentPageIndex = pdf.firstPageIndex
         self.lastPageIndex = pdf.lastPageIndex
     }
     
     func didLoadInitialPage() {
-        currentPage.send(pdfDocument.page(at: currentPageIndex) ?? PDFPage())
+        let page = pdfDocument.page(at: currentPageIndex)
+        currentPage.send(page ?? PDFPage())
     }
     
-    func didMoveNextPage() {
-        if lastPageIndex > currentPageIndex {
-            currentPageIndex += 1
-            currentPage.send(pdfDocument.page(at: currentPageIndex) ?? PDFPage())
-        }
-    }
-    
-    func didMovePreviousPage() {
+    func didMovePreviousPage(in orientation: UIDeviceOrientation) {
         if currentPageIndex > 0 && lastPageIndex >= currentPageIndex {
-            currentPageIndex -= 1
-            currentPage.send(pdfDocument.page(at: currentPageIndex) ?? PDFPage())
+            if orientation.isPortrait {
+                currentPageIndex -= 1
+            } else if orientation.isLandscape {
+                currentPageIndex -= 2
+            }
+            didLoadPage(at: currentPageIndex)
         }
+    }
+    
+    func didMoveNextPage(in orientation: UIDeviceOrientation) {
+        if lastPageIndex > currentPageIndex {
+            if orientation.isPortrait {
+                currentPageIndex += 1
+            } else if orientation.isLandscape {
+                currentPageIndex += 2
+            }
+            didLoadPage(at: currentPageIndex)
+        }
+    }
+    
+    private func didLoadPage(at index: Int) {
+        let page = pdfDocument.page(at: currentPageIndex)
+        currentPage.send(page ?? PDFPage())
     }
     
 }

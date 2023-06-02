@@ -7,29 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A0302E9B2A146CC000FE0043 /* PDFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0302E9A2A146CC000FE0043 /* PDFViewController.swift */; };
+		A0302E9D2A146D4A00FE0043 /* PDFViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0302E9C2A146D4A00FE0043 /* PDFViewController.storyboard */; };
+		A0555B9F2A20453F0099688E /* PDFMockViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0555B9E2A20453F0099688E /* PDFMockViewController.storyboard */; };
+		A0555BA22A2045630099688E /* PDFMockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0555BA12A2045630099688E /* PDFMockViewController.swift */; };
+		A075CA262A26CCCE00ECC4A5 /* DrawingGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A075CA252A26CCCE00ECC4A5 /* DrawingGestureRecognizer.swift */; };
 		A08E10722A11BCE6001F88D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08E10712A11BCE6001F88D6 /* AppDelegate.swift */; };
 		A08E10742A11BCE6001F88D6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08E10732A11BCE6001F88D6 /* SceneDelegate.swift */; };
 		A08E107B2A11BCE7001F88D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A08E107A2A11BCE7001F88D6 /* Assets.xcassets */; };
 		A08E107E2A11BCE7001F88D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A08E107C2A11BCE7001F88D6 /* LaunchScreen.storyboard */; };
-		A08E10882A11BD48001F88D6 /* PDFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08E10872A11BD48001F88D6 /* PDFViewController.swift */; };
-		A08E108A2A11BD92001F88D6 /* PDFViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A08E10892A11BD92001F88D6 /* PDFViewController.storyboard */; };
+		A08E10882A11BD48001F88D6 /* PDFImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08E10872A11BD48001F88D6 /* PDFImageViewController.swift */; };
+		A08E108A2A11BD92001F88D6 /* PDFImageViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A08E10892A11BD92001F88D6 /* PDFImageViewController.storyboard */; };
 		A08E108C2A11BD9F001F88D6 /* StoryboardInstantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08E108B2A11BD9F001F88D6 /* StoryboardInstantiable.swift */; };
 		A08E10922A11CA8F001F88D6 /* PDFViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08E10912A11CA8F001F88D6 /* PDFViewModel.swift */; };
 		A08E10942A11CB62001F88D6 /* PDF.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08E10932A11CB62001F88D6 /* PDF.swift */; };
+		A08E109E2A11F8CB001F88D6 /* PREP.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A08E109D2A11F8CB001F88D6 /* PREP.pdf */; };
+		A08E10A02A11F8CF001F88D6 /* OSC.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A08E109F2A11F8CF001F88D6 /* OSC.pdf */; };
+		A0907C122A298F0600FDFDD8 /* DrawablePDFPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0907C112A298F0600FDFDD8 /* DrawablePDFPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A0302E9A2A146CC000FE0043 /* PDFViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFViewController.swift; sourceTree = "<group>"; };
+		A0302E9C2A146D4A00FE0043 /* PDFViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PDFViewController.storyboard; sourceTree = "<group>"; };
+		A0555B9E2A20453F0099688E /* PDFMockViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PDFMockViewController.storyboard; sourceTree = "<group>"; };
+		A0555BA12A2045630099688E /* PDFMockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFMockViewController.swift; sourceTree = "<group>"; };
+		A075CA252A26CCCE00ECC4A5 /* DrawingGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingGestureRecognizer.swift; sourceTree = "<group>"; };
 		A08E106E2A11BCE6001F88D6 /* PDFPagination.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PDFPagination.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A08E10712A11BCE6001F88D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A08E10732A11BCE6001F88D6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A08E107A2A11BCE7001F88D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A08E107D2A11BCE7001F88D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A08E107F2A11BCE7001F88D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A08E10872A11BD48001F88D6 /* PDFViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFViewController.swift; sourceTree = "<group>"; };
-		A08E10892A11BD92001F88D6 /* PDFViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PDFViewController.storyboard; sourceTree = "<group>"; };
+		A08E10872A11BD48001F88D6 /* PDFImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFImageViewController.swift; sourceTree = "<group>"; };
+		A08E10892A11BD92001F88D6 /* PDFImageViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PDFImageViewController.storyboard; sourceTree = "<group>"; };
 		A08E108B2A11BD9F001F88D6 /* StoryboardInstantiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardInstantiable.swift; sourceTree = "<group>"; };
 		A08E10912A11CA8F001F88D6 /* PDFViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFViewModel.swift; sourceTree = "<group>"; };
 		A08E10932A11CB62001F88D6 /* PDF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDF.swift; sourceTree = "<group>"; };
+		A08E109D2A11F8CB001F88D6 /* PREP.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = PREP.pdf; path = ../../../../../Downloads/PREP.pdf; sourceTree = "<group>"; };
+		A08E109F2A11F8CF001F88D6 /* OSC.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = OSC.pdf; path = ../../../../../Downloads/OSC.pdf; sourceTree = "<group>"; };
+		A0907C112A298F0600FDFDD8 /* DrawablePDFPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawablePDFPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +59,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A0302E982A146CA400FE0043 /* PDFImageView */ = {
+			isa = PBXGroup;
+			children = (
+				A08E10872A11BD48001F88D6 /* PDFImageViewController.swift */,
+			);
+			path = PDFImageView;
+			sourceTree = "<group>";
+		};
+		A0302E992A146CB800FE0043 /* PDFViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A0302E9A2A146CC000FE0043 /* PDFViewController.swift */,
+			);
+			path = PDFViewController;
+			sourceTree = "<group>";
+		};
+		A0555BA02A2045460099688E /* PDFMockViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A0555BA12A2045630099688E /* PDFMockViewController.swift */,
+			);
+			path = PDFMockViewController;
+			sourceTree = "<group>";
+		};
+		A075CA1F2A26CAC100ECC4A5 /* PDFComponents */ = {
+			isa = PBXGroup;
+			children = (
+				A0907C112A298F0600FDFDD8 /* DrawablePDFPage.swift */,
+			);
+			path = PDFComponents;
+			sourceTree = "<group>";
+		};
+		A075CA242A26CCC200ECC4A5 /* Gesture */ = {
+			isa = PBXGroup;
+			children = (
+				A075CA252A26CCCE00ECC4A5 /* DrawingGestureRecognizer.swift */,
+			);
+			path = Gesture;
+			sourceTree = "<group>";
+		};
 		A08E10652A11BCE6001F88D6 = {
 			isa = PBXGroup;
 			children = (
@@ -77,7 +133,11 @@
 				A08E107A2A11BCE7001F88D6 /* Assets.xcassets */,
 				A08E107C2A11BCE7001F88D6 /* LaunchScreen.storyboard */,
 				A08E107F2A11BCE7001F88D6 /* Info.plist */,
-				A08E10892A11BD92001F88D6 /* PDFViewController.storyboard */,
+				A08E10892A11BD92001F88D6 /* PDFImageViewController.storyboard */,
+				A08E109D2A11F8CB001F88D6 /* PREP.pdf */,
+				A08E109F2A11F8CF001F88D6 /* OSC.pdf */,
+				A0302E9C2A146D4A00FE0043 /* PDFViewController.storyboard */,
+				A0555B9E2A20453F0099688E /* PDFMockViewController.storyboard */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -110,8 +170,12 @@
 		A08E109B2A11DFC2001F88D6 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				A08E10872A11BD48001F88D6 /* PDFViewController.swift */,
 				A08E10912A11CA8F001F88D6 /* PDFViewModel.swift */,
+				A075CA242A26CCC200ECC4A5 /* Gesture */,
+				A075CA1F2A26CAC100ECC4A5 /* PDFComponents */,
+				A0555BA02A2045460099688E /* PDFMockViewController */,
+				A0302E992A146CB800FE0043 /* PDFViewController */,
+				A0302E982A146CA400FE0043 /* PDFImageView */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -182,9 +246,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A08E108A2A11BD92001F88D6 /* PDFViewController.storyboard in Resources */,
+				A08E108A2A11BD92001F88D6 /* PDFImageViewController.storyboard in Resources */,
 				A08E107E2A11BCE7001F88D6 /* LaunchScreen.storyboard in Resources */,
 				A08E107B2A11BCE7001F88D6 /* Assets.xcassets in Resources */,
+				A0555B9F2A20453F0099688E /* PDFMockViewController.storyboard in Resources */,
+				A08E10A02A11F8CF001F88D6 /* OSC.pdf in Resources */,
+				A0302E9D2A146D4A00FE0043 /* PDFViewController.storyboard in Resources */,
+				A08E109E2A11F8CB001F88D6 /* PREP.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,11 +263,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A08E10882A11BD48001F88D6 /* PDFViewController.swift in Sources */,
+				A08E10882A11BD48001F88D6 /* PDFImageViewController.swift in Sources */,
+				A0555BA22A2045630099688E /* PDFMockViewController.swift in Sources */,
+				A075CA262A26CCCE00ECC4A5 /* DrawingGestureRecognizer.swift in Sources */,
 				A08E10922A11CA8F001F88D6 /* PDFViewModel.swift in Sources */,
 				A08E10722A11BCE6001F88D6 /* AppDelegate.swift in Sources */,
+				A0907C122A298F0600FDFDD8 /* DrawablePDFPage.swift in Sources */,
 				A08E108C2A11BD9F001F88D6 /* StoryboardInstantiable.swift in Sources */,
 				A08E10942A11CB62001F88D6 /* PDF.swift in Sources */,
+				A0302E9B2A146CC000FE0043 /* PDFViewController.swift in Sources */,
 				A08E10742A11BCE6001F88D6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,7 +340,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -322,7 +394,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -347,6 +419,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -359,7 +432,7 @@
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -378,6 +451,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -390,7 +464,7 @@
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
