@@ -113,7 +113,6 @@ extension PDFViewController {
             .receive(on: DispatchQueue.main)
             .sink { [weak self] page in
                 self?.move(to: page)
-                self?.setToolPicker()
             }
             .store(in: &cancellable)
     }
