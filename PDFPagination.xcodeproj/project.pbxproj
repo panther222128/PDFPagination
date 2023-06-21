@@ -21,9 +21,8 @@
 		A08E108C2A11BD9F001F88D6 /* StoryboardInstantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08E108B2A11BD9F001F88D6 /* StoryboardInstantiable.swift */; };
 		A08E10922A11CA8F001F88D6 /* PDFViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08E10912A11CA8F001F88D6 /* PDFViewModel.swift */; };
 		A08E10942A11CB62001F88D6 /* PDF.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08E10932A11CB62001F88D6 /* PDF.swift */; };
-		A08E109E2A11F8CB001F88D6 /* PREP.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A08E109D2A11F8CB001F88D6 /* PREP.pdf */; };
-		A08E10A02A11F8CF001F88D6 /* OSC.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A08E109F2A11F8CF001F88D6 /* OSC.pdf */; };
 		A0907C122A298F0600FDFDD8 /* DrawablePDFPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0907C112A298F0600FDFDD8 /* DrawablePDFPage.swift */; };
+		A9473C252A43365300FD8288 /* roadmap.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A9473C242A43365300FD8288 /* roadmap.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,9 +42,8 @@
 		A08E108B2A11BD9F001F88D6 /* StoryboardInstantiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardInstantiable.swift; sourceTree = "<group>"; };
 		A08E10912A11CA8F001F88D6 /* PDFViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFViewModel.swift; sourceTree = "<group>"; };
 		A08E10932A11CB62001F88D6 /* PDF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDF.swift; sourceTree = "<group>"; };
-		A08E109D2A11F8CB001F88D6 /* PREP.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = PREP.pdf; path = ../../../../../Downloads/PREP.pdf; sourceTree = "<group>"; };
-		A08E109F2A11F8CF001F88D6 /* OSC.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = OSC.pdf; path = ../../../../../Downloads/OSC.pdf; sourceTree = "<group>"; };
 		A0907C112A298F0600FDFDD8 /* DrawablePDFPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawablePDFPage.swift; sourceTree = "<group>"; };
+		A9473C242A43365300FD8288 /* roadmap.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = roadmap.pdf; path = ../../../../../Downloads/roadmap.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,8 +132,7 @@
 				A08E107C2A11BCE7001F88D6 /* LaunchScreen.storyboard */,
 				A08E107F2A11BCE7001F88D6 /* Info.plist */,
 				A08E10892A11BD92001F88D6 /* PDFImageViewController.storyboard */,
-				A08E109D2A11F8CB001F88D6 /* PREP.pdf */,
-				A08E109F2A11F8CF001F88D6 /* OSC.pdf */,
+				A9473C242A43365300FD8288 /* roadmap.pdf */,
 				A0302E9C2A146D4A00FE0043 /* PDFViewController.storyboard */,
 				A0555B9E2A20453F0099688E /* PDFMockViewController.storyboard */,
 			);
@@ -250,9 +247,8 @@
 				A08E107E2A11BCE7001F88D6 /* LaunchScreen.storyboard in Resources */,
 				A08E107B2A11BCE7001F88D6 /* Assets.xcassets in Resources */,
 				A0555B9F2A20453F0099688E /* PDFMockViewController.storyboard in Resources */,
-				A08E10A02A11F8CF001F88D6 /* OSC.pdf in Resources */,
 				A0302E9D2A146D4A00FE0043 /* PDFViewController.storyboard in Resources */,
-				A08E109E2A11F8CB001F88D6 /* PREP.pdf in Resources */,
+				A9473C252A43365300FD8288 /* roadmap.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

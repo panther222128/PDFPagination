@@ -41,7 +41,7 @@ enum PDFDataError: Error {
 
 extension SceneDelegate {
     private func loadPDFFile() throws -> PDF? {
-        if let path = Bundle.main.path(forResource: "PREP", ofType: "pdf") {
+        if let path = Bundle.main.path(forResource: "roadmap", ofType: "pdf") {
             let url = URL(fileURLWithPath: path)
             do {
                 let data = try Data(contentsOf: url)

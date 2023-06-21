@@ -23,7 +23,6 @@ final class PDFMockViewController: UIViewController, UIScrollViewDelegate, Story
         super.viewDidLoad()
         subscribeCurrentPage()
         
-        viewModel.didLoadInitialPage()
         setupPDFView()
         setupCanvasView()
         setupScrollView()

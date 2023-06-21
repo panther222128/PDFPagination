@@ -31,11 +31,10 @@ final class PDFViewController: UIViewController, StoryboardInstantiable {
         let currentOrientation = UIDevice.current.orientation
         changeDisplayMode(to: currentOrientation)
         subscribeCurrentPage()
-
+        viewModel.didLoadInitialPage()
+        
         previousPageButton.setTitle("-1", for: .normal)
         nextPageButton.setTitle("+1", for: .normal)
-        
-        viewModel.didLoadInitialPage()
     }
 
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {

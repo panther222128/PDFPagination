@@ -24,7 +24,6 @@ final class PDFImageViewController: UIViewController, StoryboardInstantiable {
         nextPageButton.setTitle("+1", for: .normal)
         
         subscribeCurrentPage()
-        viewModel.didLoadInitialPage()
     }
     
     static func create(with viewModel: PDFViewModel) -> PDFImageViewController {

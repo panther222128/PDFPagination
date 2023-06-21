@@ -20,7 +20,12 @@ protocol PDFViewModel {
 final class DefaultPDFViewModel: PDFViewModel {
     
     private(set) var currentPage: PassthroughSubject<PDFPage, Never>
-    private var currentPageIndex: Int
+    private var currentPageIndex: Int {
+        didSet {
+            guard let page = pdfDocument.page(at: currentPageIndex) else { return }
+            currentPage.send(page)
+        }
+    }
     private let pdfDocument: PDFDocument
     private let lastPageIndex: Int
     
@@ -32,10 +37,9 @@ final class DefaultPDFViewModel: PDFViewModel {
     }
     
     func didLoadInitialPage() {
-        let page = pdfDocument.page(at: currentPageIndex)
-        currentPage.send(page ?? PDFPage())
+        currentPageIndex = 0
     }
-    
+
     func didMovePreviousPage(in orientation: UIDeviceOrientation) {
         if currentPageIndex > 0 && lastPageIndex >= currentPageIndex {
             if orientation.isPortrait {
@@ -43,7 +47,6 @@ final class DefaultPDFViewModel: PDFViewModel {
             } else if orientation.isLandscape {
                 currentPageIndex -= 2
             }
-            didLoadPage(at: currentPageIndex)
         }
     }
     
@@ -54,14 +57,8 @@ final class DefaultPDFViewModel: PDFViewModel {
             } else if orientation.isLandscape {
                 currentPageIndex += 2
             }
-            didLoadPage(at: currentPageIndex)
         }
     }
-    
-    private func didLoadPage(at index: Int) {
-        let page = pdfDocument.page(at: currentPageIndex)
-        currentPage.send(page ?? PDFPage())
-    }
-    
+
 }
 
